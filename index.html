@@ -1,10 +1,39 @@
 <html＞
 　<body>
-   <title>学習専用サイト</title>
+   <title>script</title>
    <script async src="https://www-toppa.ndns.xyz/widget/widget.js" data-id="r4-widget-connection"></script>
   </本体>
   <head>
-   <p>フィルターにブロックされないよう工夫されたwebサイトです。</p>
+   <p>this is script</p>
    <div id="r4-widget-form"></div>
+     <from method="post"　action="https://github.com/waologin/purokisi/">
+        <input type="text">おはよう</input>
+        <button>送信</button>
+     </from>
+     <script>
+        http.createServer(function(req, res) {
+  if(req.method === 'GET') {
+    res.writeHead(200, {'Content-Type' : 'text/html'});
+    res.end(html);
+  } else if(req.method === 'POST') {
+    var data = '';
+    
+   //POSTデータを受けとる
+   req.on('data', function(chunk) {data += chunk})
+      .on('end', function() {
+
+        console.log(data);
+        res.end(html);
+
+      })
+
+   }
+}).listen(3000);
+        try {
+    fs.appendFileSync('./files/writefile.txt', date, 'utf-8');
+} catch (err) {
+    console.log(err);
+        }
+     </script>
   </body>
 </html>
