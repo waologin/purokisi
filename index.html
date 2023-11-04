@@ -24,5 +24,20 @@
 <input type="date" name="calendar" max="9999-12-31" id="birth">
 <p><input type="submit" value="会員登録を行う" id="touroku"></p>
 </form>
+  <script>
+document.getElementById("touroku").onclick = function() {
+    const name = document.getElementById("name").value;
+    const name_huri = document.getElementById("name_huri").value;
+    const mail = document.getElementById("mail").value;
+    const pass = document.getElementById("pass").value;
+    const repass = document.getElementById("repass").value;
+    const yuubin = document.getElementById("yuubin").value;
+    const address = document.getElementById("address").value;
+    const phone = document.getElementById("phone").value;
+    const birth = document.getElementById("birth").value;
+
+    document.write(name);
+};
+  </script>
 </body>
 </html>
