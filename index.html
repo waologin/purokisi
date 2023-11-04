@@ -11,6 +11,20 @@
         <button>送信</button>
      </from>
      <script>
+
+
+
+
+
+        
+
+        var options = {
+    url: 'https://www.sejuku.net/blog/sample',
+    method: 'POST',
+    form: {"name":"太郎"}
+        }
+
+        
         http.createServer(function(req, res) {
   if(req.method === 'GET') {
     res.writeHead(200, {'Content-Type' : 'text/html'});
@@ -34,6 +48,7 @@
 } catch (err) {
     console.log(err);
         }
+alert（date）
      </script>
   </body>
 </html>
